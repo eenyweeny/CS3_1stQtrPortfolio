@@ -2,12 +2,20 @@
 <body>
     <p></p>
     <script>
-        let age=15;
-        let maxAge=100;
-        let numPerDay=3;
+        let age = window.prompt("What is your age? ", "0"); //15
+        let maxAge= window.prompt("What is the max age? ", "0"); //100
+        let numPerDay= window.prompt("How many per day?", "0"); //3
 
         totalRequired=(numPerDay * 365)*(maxAge-age);
 
-        document.write("You will need " + totalRequired + " chuckies to last you until the ripe old age of " + maxAge);
+        let sure = window.confirm("Are you sure? " + age + " " + maxAge + " " + numPerDay);
+
+        if (sure) {
+            document.write("You will need " + totalRequired + " chuckies to last you until the ripe old age of " + maxAge);
+        } 
+        else {
+            document.write("Run the program again.");
+        }
+
     </script>
 </body>
