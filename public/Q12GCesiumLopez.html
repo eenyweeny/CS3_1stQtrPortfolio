@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Q1 3rd Graded Exercise submitted by Reen Lopez of 9-Cesium</h2>
+
+    <label>Meal Price:
+        <input id="meal" type="number" step="0.01">
+    </label>
+    <br><br>
+
+    <label>Tip:
+        <input id="tip" type="number" step="0.01">
+    </label>
+    <br><br>
+
+    <label>Service Charge (%):
+        <input id="charge" type="number" step="0.01">
+    </label>
+    <br><br>
+
+    <button onclick="totalMeal()">Accept Input</button>
+
+    <p id="result">Total Meal: </p>
+
+    <footer>
+        <p>@Lopez, 2025</p>
+    </footer>
+
+    <script>
+        function totalMeal() {
+            let mp = parseFloat(document.getElementById("meal").value);
+            let tip = parseFloat(document.getElementById("tip").value);
+            let scPercent = parseFloat(document.getElementById("charge").value);
+
+            let totalCost = mp + tip + (scPercent / 100 * mp);
+
+            document.getElementById("result").innerHTML = "Total Meal: " + totalCost.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
