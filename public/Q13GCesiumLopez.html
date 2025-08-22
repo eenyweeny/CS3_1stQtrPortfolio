@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 3rd Graded Exercise submitted by Reen Debbie S. Lopez of 9-Cesium</h2>
+
+    <p>Guess the number: ****<span id="numShow"></span></p>
+    <p>The number is from 1 to 100.</p>
+        <p>Enter your guess:  <input type="number" id="guessofUser" min="1" max="100">
+        <p><button onclick="checkIt()">Check It</button>
+        <p>Result: <span id="result">
+
+    <script>
+        let dNumber = Math.floor(Math.random()*100) + 1;
+
+        function checkIt() {
+            let guess = Number(document.getElementById("guessofUser").value);
+            let msg = (guess === dNumber) ? "You are correct."
+                    : (guess > dNumber) ? "Lower."
+                    : "Higher.";
+                    
+        document.getElementById("result").innerHTML = msg;
+        }
+    
+    </script>
+
+    <footer>
+        @Lopez, 2025
+        Credits to: KHub Learning guides and
+        W3Schools.com. (n.d.). https://www.w3schools.com/react/react_es6_ternary.asp
+    </footer>
+</body>    
+</html>
