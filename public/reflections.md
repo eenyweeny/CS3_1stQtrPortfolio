@@ -49,4 +49,3 @@
 1. **Only Discussions** - I prefer discussions and being able to do the code at the same time. Basically interactive sessions.
 2. **Graded Exercises** - Graded Exercises are actually good, the only thing is that it's an activity you can bring home. That means other students can use AI or ask help from family members to do it. 
 
-## <span style="color: transparent;">I LOVE YOU MA'AM!</span> Press and drag your cursor beside this sentence to reveal a secret messge!
